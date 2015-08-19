@@ -23,10 +23,10 @@ Follow the steps outlined below to register the application in Azure Active Dire
 10.	Locate the permissions to other applications section and click on the Add application button to launch the Permissions to other applications dialog
 11.	Locate and add **Office 365 unified API (preview)** before clicking the check button to close the dialog
 12.	Add Delegated Permissions for **Access directory as signed-in user**
-13.	Click the SAVE button in the footer to save the updated application permissions
-14.	Click on the MANAGE MANIFEST button in the footer and then select Download Manifest to download the application manifest to a safe location
-15.	Open the Application Manifest in Notepad and change the oauth2AllowImplicitFlow to true
-16.	Save and close the Application Manifest before uploading it back into Azure by clicking the MANAGE MANIFEST button in the footer and selecting Upload Manifest
+13.	Click the **SAVE** button in the footer to save the updated application permissions
+14.	Click on the **MANAGE MANIFEST** button in the footer and then select **Download Manifest** to download the application manifest to a safe location
+15.	Open the Application Manifest in Notepad and change the **oauth2AllowImplicitFlow** to **true**
+16.	Save and close the Application Manifest before uploading it back into Azure by clicking the **MANAGE MANIFEST** button in the footer and selecting **Upload Manifest**
 
 ## Updating the Scripts ##
 Once the application is registered and setup to support the implicit flow with Azure AD, you need to update the app/org.app.js file with your **tenant** and **clientId** for the app:
