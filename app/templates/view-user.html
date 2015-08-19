@@ -1,0 +1,8 @@
+<h2>Manager: <a href="#/user/{{data.manager.objectId}}">{{data.manager.displayName}}</a></h2>
+<h2>Employee: {{data.user.displayName}}</h2>
+<h2>Direct Reports: 
+	<span ng-repeat="report in data.directReports.value">
+		<a href="#/user/{{report.objectId}}">{{report.displayName}}</a>
+		<span ng-show="$index < data.directReports.value.length - 1">, </span>
+	</span>
+</h2>
